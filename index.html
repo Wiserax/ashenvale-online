@@ -121,7 +121,11 @@
   #load h2 { font-family: var(--title); font-weight: 400; letter-spacing: 0.6em; text-indent: 0.6em; font-size: 14px; color: var(--gold-dim); margin: 6px 0 46px; }
   #load .track { width: 340px; height: 2px; margin: 0 auto; background: rgba(216, 184, 120, 0.15); }
   #load .track i { display: block; height: 100%; width: 0; background: var(--gold); box-shadow: 0 0 12px var(--gold); transition: width 0.2s; }
-  #load p { font-style: italic; color: #8d846f; margin-top: 18px; font-size: 16px; min-height: 22px; }
+  #load .box { width: 100%; padding: 0 16px; }
+  #load .track { max-width: 100%; }
+  #load p { font-style: italic; color: #8d846f; margin: 18px 0 0; font-size: 16px; min-height: 22px; }
+  #load #loadstage { color: #b9ad94; }
+  #load #loadtip { margin-top: 6px; font-size: 14px; font-style: normal; font-variant-numeric: tabular-nums; }
   #enter { display: none; margin: 30px auto 0; pointer-events: auto; cursor: pointer; font-family: var(--title); letter-spacing: 0.3em; text-indent: 0.3em; font-size: 15px; color: #1a140a; background: linear-gradient(180deg, #ecd9ad, #b8975a); border: 0; padding: 14px 34px; box-shadow: 0 0 40px rgba(216, 184, 120, 0.35); }
   #enter:hover { filter: brightness(1.12); }
 
@@ -171,7 +175,7 @@
     .slot.tb[data-k='3'] { --r: 31px !important; --b: 308px !important; }
   }
 </style>
-  <script type="module" crossorigin src="./assets/index-DcsGB8fK.js"></script>
+  <script type="module" crossorigin src="./assets/index-BjAQQ93a.js"></script>
 </head>
 <body>
 <canvas id="view"></canvas>
@@ -263,7 +267,8 @@
     <h1>ASHENVALE</h1>
     <h2>ONLINE</h2>
     <div class="track"><i id="loadbar"></i></div>
-    <p id="loadtip">Waking the vale...</p>
+    <p id="loadstage">Waking the vale...</p>
+    <p id="loadtip"></p>
     <button id="enter">ENTER THE VALE</button>
   </div>
 </div>
